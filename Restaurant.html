@@ -11,8 +11,11 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="restaurant-background">
 <header>
   <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="container">
@@ -41,9 +44,86 @@
     </div>
   </nav>
 </header>
-<H1> Restaurant </H1>
+<div class="overlay"><h1>Traditional Guatemalan Cuisine</h1></div>
+<!-- Carousel -->
+<div id="carouselFood" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/Guatemala-National-Dish-Pepian-de-Pollo-.png" alt="First slide">
+    </div>
+  </div>
+</div>
 
-<div class="grid-container">
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 d-flex align-items-center">
+      <div class="restaurant_titles">
+        <h2>BreakFast</h2>
+        <ul>Breakfast #1 / Desayuno #1
+          2 eggs any style, Guatemalan cream and black beans / 2 Huevos Al Gusto con Frijol y Crema Guatemalteca
+        </ul>
+        <ul>Breakfast #2 / Desayuno #2
+          2 Hard boiled eggs with Guatemalan cream and black beans / 2 Huevos Duros con Frijol y Crema
+        </ul>
+        <ul>Breakfast #3 / Desayuno #3
+          Sweet plantains with Guatemalan cream and black beans / Plátanos con Frijol y Crem
+        </ul>
+        <p>
+          </p>
+        <p></p>
+      </div>
+    </div>
+    <div class="image breakfast-img col-md-6 d-flex align-items-center">
+      <img src="img/desayuno-chapin-2-scaled.png" alt="image">
+    </div>
+  </div>
+  <div class="row">
+    <div class="image col-md-6 order-md-2 d-flex align-items-center">
+      <img src="img/ENCHILADAS-DE-PESCADO-SECO-3.png" alt="image">
+    </div>
+
+
+  </div>
+  <div class="row">
+    <div class="col-md-6 order-md-1 d-flex align-items-center">
+      <div class="restaurant_titles">
+        <h2>Entree</h2>
+        <p>. Pepian                      . Panza               . Frijoles Blancos
+
+          . Pollo en Crema        . Hilachas           . Carne Adobada
+
+          . Carne Guisada        . Revolcado         . Frijoles Colorados con Chicharrón
+        </p>
+      </div>
+    </div>
+    <div class="image col-md-6 order-md-2 d-flex align-items-center">
+      <img src="img/pepian.png" alt="image">
+    </div>
+
+  </div>
+
+
+
+</div>
+<div class="container-togo">
+  <div class="menu_changing">
+  <p>We've teamed up with Too Good To Go to help combat food waste and to be more eco-friendly. Every day, we collect surplus food that would have been discarded and offer it for sale at a discounted price. Each bag is filled with a selection of surprise items, but availability is limited, so reserve your bag today!
+  </p>
+    <a href="https://www.toogoodtogo.com/en-us/user" target="_blank" class="icon-button">
+      <img src="img/tgtg_logo.70534928.svg" alt="image">
+    </a>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<!-- <div class="grid-container">
   <div class="grid-item item1">
     <img src="img/guatemalan-tostadas.png" alt="Image 1">
   </div>
@@ -62,7 +142,7 @@
   <div class="grid-item item6">
     <img src="img/guatemalan-tostadas.png" alt="Image 6">
   </div>
-</div>
+</div>-->
 
 
 <footer class="bg-light text-dark py-3">

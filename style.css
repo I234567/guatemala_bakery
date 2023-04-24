@@ -1,4 +1,4 @@
-/* Style the navbar */
+@import url("https://use.fontawesome.com/releases/v5.15.3/css/all.css"); /* Style the navbar */
 header {
     background-color: #333;
     color: #fff;
@@ -35,6 +35,133 @@ header {
 .grid-item img {
     width: 100%;
     height: auto;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container-togo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.restaurant_titles {
+    padding: 0 40px;
+    text-align: left;
+}
+
+.restaurant_titles h2 {
+    margin-bottom: 20px;
+}
+
+.col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.order-md-2 {
+    order: 2;
+}
+
+@media (max-width: 767px) {
+    .restaurant_titles {
+        padding: 0 20px;
+    }
+}
+.breakfast-img{
+    width:100%;
+}
+
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.image img {
+    width: 100%;
+    display: block;
+}
+
+.image p {
+    margin-top: 10px;
+}
+
+
+.restaurant-background{
+    background-image: url("");
+    background-size: cover;
+
+
+}
+.overlay {
+    color:#fff;
+    position:absolute;
+    z-index:12;
+    top:50%;
+    left:0;
+    width:100%;
+    text-align:center;
+}
+.btn {
+    position: relative;
+    bottom: 50%;
+    left: 50%;
+}
+
+.btn .btn-description {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 10%;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    background-color: #000000;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.25rem 0.5rem rgb(255, 255, 255);
+}
+
+.btn:hover .btn-description {
+    display: block;
+}
+
+.icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    color: #000000;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+.icon-button:hover {
+    background-color: #555;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translate(-50%, -2px) scale(1.05);
+}
+
+.icon-button i {
+    font-size: 24px;
 }
 
 
