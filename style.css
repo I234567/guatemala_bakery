@@ -1,0 +1,117 @@
+/* Style the navbar */
+header {
+    background-color: #333;
+    color: #fff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.grid-item {
+    flex-basis: calc(33.33% - 10px);
+    margin-bottom: 20px;
+}
+
+.item1, .item2, .item3 {
+    flex-basis: calc(66.66% - 10px);
+}
+
+.item4 {
+    flex-basis: calc(33.33% - 10px);
+}
+
+.item5, .item6 {
+    flex-basis: calc(50% - 10px);
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/**/
+.carousel {
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.carousel-inner {
+    margin: 20px;
+}
+
+/* Style the logo */
+.logo {
+    max-width: 100%;
+    height: auto;
+    max-height: 50px; /* adjust this value as needed */
+}
+
+/* Style the menu */
+.menu {
+    margin-right: 20px;
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+
+/* Add a bounding box to the menu option on hover */
+.menu a:hover::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+body {
+    border-left: 1px solid #fff;
+    padding-left: 20px;
+    border-right: 1px solid #fff;
+    padding-right: 20px;
+}
+/* Make the navbar text bigger */
+.navbar-nav .nav-link {
+    font-size: 3rem;
+}
+nav {
+    padding: 100px;
+    margin-bottom: 100px;
+}
+
+
+/* Make the navbar collapse at smaller screen sizes */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+}
