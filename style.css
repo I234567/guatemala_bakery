@@ -7,35 +7,6 @@ header {
     align-items: center;
 }
 
-.grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: 1000px;
-}
-
-.grid-item {
-    flex-basis: calc(33.33% - 10px);
-    margin-bottom: 20px;
-}
-
-.item1, .item2, .item3 {
-    flex-basis: calc(66.66% - 10px);
-}
-
-.item4 {
-    flex-basis: calc(33.33% - 10px);
-}
-
-.item5, .item6 {
-    flex-basis: calc(50% - 10px);
-}
-
-.grid-item img {
-    width: 100%;
-    height: auto;
-}
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -54,10 +25,28 @@ header {
 .restaurant_titles {
     padding: 0 40px;
     text-align: left;
-}
 
-.restaurant_titles h2 {
+}
+.about-title {
+    padding: 0 40px;
+    text-align: left;
+}
+.restaurant_titles-right {
+    padding: 0 40px;
+    text-align: right
+
+}
+.restaurant_titles-right h2{
     margin-bottom: 20px;
+    font-family: 'Courgette', cursive;}
+
+.restaurant_titles h2  {
+    margin-bottom: 20px;
+    font-family: 'Courgette', cursive;
+}
+.about-text h2 {
+    margin-bottom: 20px;
+    font-family: 'Courgette', cursive;
 }
 
 .col-md-6 {
@@ -67,6 +56,9 @@ header {
 
 .order-md-2 {
     order: 2;
+}
+.order-md-1 {
+    order: 1;
 }
 
 @media (max-width: 767px) {
@@ -86,9 +78,15 @@ header {
 }
 
 .image {
-    width: 48%;
+    width: 50%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.image-about {
+    width: 30%;
     margin-bottom: 20px;
 }
+
 
 .image img {
     width: 100%;
@@ -99,15 +97,9 @@ header {
     margin-top: 10px;
 }
 
-
-.restaurant-background{
-    background-image: url("");
-    background-size: cover;
-
-
-}
 .overlay {
-    color:#fff;
+    color: #000000;
+    font-family: 'Courgette', cursive;
     position:absolute;
     z-index:12;
     top:50%;
@@ -229,6 +221,7 @@ body {
 /* Make the navbar text bigger */
 .navbar-nav .nav-link {
     font-size: 3rem;
+    font-family: 'Courgette', cursive;
 }
 nav {
     padding: 100px;
@@ -240,5 +233,17 @@ nav {
 @media (max-width: 768px) {
     .navbar-nav .nav-link {
         font-size: 1rem;
+    }
+}
+@media (max-width: 768px){
+    body{
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px){
+    .overlay {
+        font-size: 0.4rem;
     }
 }
