@@ -160,8 +160,22 @@ header {
     width:100%;
     text-align:center;
 }
+.overlay-bakery{
+    color: #010DB5;
+    font-family: 'Courgette', cursive;
+    position:absolute;
+    z-index:1;
+    top:50%;
+    left:0;
+    width:100%;
+    text-align:center;
+}
+
 .overlay-index h1 {
     font-size: 6rem; /* Default font size */
+}
+.overlay-bakery h1{
+    font-size: 6.5rem;
 }
 .overlay h1{
     font-size: 6rem;
