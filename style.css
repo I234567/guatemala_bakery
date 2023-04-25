@@ -6,6 +6,18 @@ header {
     display: flex;
     align-items: center;
 }
+.sign{
+    width: 10%;
+    position: absolute;
+    z-index: 1;
+}
+.restaurant_titles p {
+    list-style: disc;
+    margin-left: 1em;
+    font-size: 1.5em;
+}
+
+
 
 .container {
     max-width: 1200px;
