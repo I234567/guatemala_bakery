@@ -6,6 +6,12 @@ header {
     display: flex;
     align-items: center;
 }
+.about-background{
+
+    margin: 0;
+    padding: 0;
+    border: 20px solid white;
+}
 .sign{
     width: 10%;
     position: absolute;
@@ -291,6 +297,14 @@ body {
     padding-left: 20px;
     border-right: 1px solid #fff;
     padding-right: 20px;
+    z-index: 1;
+}
+.about-background{
+    border-left: 1px solid #fff;
+    padding-left: 20px;
+    border-right: 1px solid #fff;
+    padding-right: 20px;
+    z-index: 1;
 }
 /* Make the navbar text bigger */
 .navbar-nav .nav-link {
